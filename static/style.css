@@ -6,6 +6,13 @@
     scroll-behavior: smooth;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* remove scrollbar chrome */
 
@@ -15,7 +22,6 @@
 
 .carousel {
     width: 70vw;
-    margin: auto;
 }
 
 .slider {
@@ -33,25 +39,26 @@ img {
     width: 100%;
 }
 
-#prevBtn {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    color: white;
-}
 
-#nextBtn {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    color: white;
-}
+/* arrows */
 
 i {
+    position: absolute;
+    top: 50%;
     opacity: 0.5;
+    color: white;
     font-size: 2rem;
 }
 
 i:hover {
     cursor: pointer;
+    opacity: 1;
+}
+
+#prevBtn {
+    left: 1rem;
+}
+
+#nextBtn {
+    right: 1rem;
 }
