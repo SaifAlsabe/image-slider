@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+/* remove scrollbar chrome */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    width: 70vw;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    /* remove scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+img {
+    width: 100%;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    color: white;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: white;
+}
+
+i {
+    opacity: 0.5;
+    font-size: 2rem;
+}
+
+i:hover {
+    cursor: pointer;
+}
